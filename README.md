@@ -3,7 +3,7 @@
 > 基于 143 篇"深夜小茶馆"杨湃故事蒸馏，可生成符合口语化电台叙事风格的灵异/民间传说/都市怪谈短篇故事。**兼容任意大模型。**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/version-v2.6-blue)]()
+[![Version](https://img.shields.io/badge/version-v2.7-blue)]()
 
 ---
 
@@ -11,7 +11,7 @@
 
 这是一个**跨模型兼容的故事创作技能包**，专为**灵异/恐怖/民间传说类短篇故事**创作设计。它通过"风格蒸馏 → 规则提取 → 可执行指令"的方法论，将一位资深音频节目主播的创作风格转化为大模型可遵循的精细规则。
 
-v2.6 全量优化重点解决了「生成故事平淡无聊、缺乏故事张力、跨模型适配性差、创作流程虚化」四大核心问题。
+**v2.7 第二轮深度优化**——在 v2.6 硬化结构/人物的基础上，针对「剧情老套、走向可预测、缺乏惊喜感」做反套路升级：双层反转机制、灰度人性、灵异叙事功能化、6 种非线性叙事手法、100 个反套路钩子素材库、TOP20 俗套改写方案。
 
 ### 能力范围
 
@@ -44,18 +44,20 @@ story-writer-skill/
 ├── .gitignore
 │
 ├── assets/                      # 资产文件（创作时加载）
-│   ├── opening-templates.md     # 3类10种经典开头模板
+│   ├── opening-templates.md     # 线性10种 + 非线性3种开头模板
 │   ├── dialogue-examples.md     # 10 种对话模式范例
-│   ├── forbidden-phrases.md     # 精简 TOP20 禁令 + 叙事逻辑禁令
+│   ├── forbidden-phrases.md     # 精简 TOP20 禁令 + 叙事逻辑 + 俗套剧情红线
 │   ├── ai-detection.md          # AI 味系统性检测指南
-│   ├── novel-reference.md       # 法术素材库（代价化 + 强度分级）
-│   ├── quality-checklist.md     # P0一票否决 + P1/P2 分级质量清单
-│   └── plot-hooks.md            # 🆕 100个民间怪谈桥段素材库
+│   ├── novel-reference.md       # 法术素材库（代价+分级+反套路用法）
+│   ├── quality-checklist.md     # P0 一票否决 + 新意度自评
+│   ├── plot-hooks.md            # 100 个民间怪谈桥段素材库
+│   └── anti-cliche.md           # 🆕 TOP20 俗套改写 + 100 反转钩子 + 伏笔对照
 │
-├── references/                  # 参考资料（风格蒸馏产物）
-│   ├── style-guide.md           # 叙事风格、语言指纹、修辞手法
-│   ├── character-arcs.md        # 角色分类、成长弧线、配角配置
-│   └── plot-structures.md       # 结构骨架、冲突类型、转折规律
+├── references/                  # 参考资料（风格蒸馏产物 + 写作技法）
+│   ├── style-guide.md           # 叙事风格 + 灵异功能分类 + 细节恐怖规则
+│   ├── character-arcs.md        # 角色塑造 + 灰度法则 + 不可靠叙述
+│   ├── plot-structures.md       # 3幕6节点 + 双重真相 + 5类反套路骨架
+│   └── narrative-techniques.md  # 🆕 6 种叙事手法工具箱
 │
 ├── scripts/                     # 脚本
 │   └── convert-to-docx.py       # Markdown → Word 转换工具
