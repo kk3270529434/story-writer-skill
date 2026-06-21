@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+Thumbs.db
+.DS_Store
+Desktop.ini
+
+# Claude Code (local config)
+.claude/
+.agents/
+
+# Project data — 故事稿件、参考小说、输出文件不上传
+参考小说/
+故事/
+output/
+cleaned_stories/
+新建文件夹/
+额外素材/
+*.docx
+!assets/*.docx
+
+# Downloaded / generated content
+*.log
+error.log
+.progress.txt
+
+# Temp files
+tmp/
+temp/
